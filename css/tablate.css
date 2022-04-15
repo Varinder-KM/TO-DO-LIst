@@ -1,0 +1,136 @@
+@media (min-width : 786px) and (max-width: 1200px) {
+    .section{
+        padding: 60px 60px;
+        position: relative;
+    }
+}
+
+@media (min-width: 480px) and (max-width:720px) and (orientation: landscape){
+    .section{
+        padding: 30px 30px;
+        position: relative;
+    }
+    .dec_task_input{
+        width: 100%;
+    }
+    .due_period{
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width:428px) and (orientation: portrait){
+    .section{
+        padding: 15px 15px;
+    }
+
+    .fa-align-left{
+        margin-right: 30px;
+    }
+    .navbar{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #profile_name h4{
+        font-size: 16px;
+    }
+    #profile_name p{
+        font-size: 12px;
+    }
+    #avator_profile{
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+    }
+    #avator_collaction{
+        width: 32px;
+        height: 32px;
+    }
+    #add_task{
+        max-width: 180px;
+        height: 36px;
+        margin: 30px auto;
+        margin-bottom: 60px;
+    }
+    #add_btn{
+        width: 28px;
+        height: 28px;
+    }
+    #add_task >p{
+        font-size: 12px;
+        color: #ffffff7c;
+        margin-left: 15px;
+    }
+    .heading{
+        font-size: 18px;
+    }
+    .dec_task_input{
+        width: 100%;
+    }
+    .due_period{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #due_date{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #due_time{
+        width: 100%;
+        left: 0;
+    }
+    #model_container{
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    #model_section{
+        padding: 30px 30px;
+    }
+    #model_section.popup{
+        padding: 60px 30px;
+    }
+    #model_container h1{
+        font-size: 26px;
+    }
+    .collection_section{
+        margin-right: -10px;
+    }
+
+    .To-Go> .go_work_checker{
+        width: 14px;
+        height: 14px;
+   }
+   .completed> .go_work_checker{
+       width: 14px;
+       height: 14px;
+   }
+
+   .t_dec > div{
+       width: 28px;
+       height: 28px;
+   }
+   .t_due >div{
+       width: 18px;
+       height: 18px;
+   }
+   .t_dec >p{
+       font-size: 8px;
+       margin-left:8px;
+   }
+   .t_due >p{
+       font-size: 8px;
+       margin-left:8px;
+   }
+   .task_clearer{
+    height: 26px;
+    width: 10%;
+    }
+
+    .task_clearer> i{
+        font-size: 14px;
+    }
+   .avater{
+       width: 98px;
+       height: 98px;
+   }
+}

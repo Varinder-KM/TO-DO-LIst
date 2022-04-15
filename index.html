@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tablate.css"/>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+
+    <title>TO-DO List</title>
+</head>
+<body>
+    <div class="navbar" id="blur1">
+        <nav id="navbar">
+            <div id="profile">
+                <i class="fa fa-align-left" aria-hidden="true" id="navIcon"></i>
+                <div id="avator_profile"></div>
+                <div id="profile_name">
+                    <h4>Varinder</h4>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            
+            <div id="avator_collaction"></div>
+        </nav>
+    </div>
+    
+    <!-- To-Do List Section -->
+    <section class="section" id="blur2">
+        <div class="container">
+            <h1 class="heading" style="text-align: center;">TO-DO LIST</h1>
+            <div id="hr_line"></div>
+          
+            <div id="add_task">
+                <p>Add Task</p>
+                <div id="add_btn">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <h1 class="heading">TO GO</h1>
+            <div id="hr_GO_line" class="shadow_effect"></div>
+            <div id="to_go_section">
+                <div id="to_go_container">
+                   
+                </div>
+            </div>
+            
+            <h1 class="heading" style="padding-top:60px">Complete</h1>
+            <div id="hr_com_line" style="box-shadow: 0 0 10px #17F2E5 ;"></div>
+            <div id="complete_section">
+                <div id="complete_container">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- SideBar Section -->
+        <div class="sidebar" id="sidebar">
+            <h1>Collection</h1>
+            <div>
+                <div class="col_images" id="img1"></div>
+                <h4>School</h4>
+            </div>
+             <div>
+                <div class="col_images" id="img2"></div>
+                <h4>Personal</h4>
+            </div>
+            <div>
+                <div class="col_images" id="img3"></div>
+                <h4>Office</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Section -->
+    <div id="model_section">
+        <div id="model_container">
+            <h1>Add Task</h1>
+            <div class="task_hr1 shadow_effect"></div>
+            
+            <div class="dec_task_input">
+                <input class="input_field" type="text" id="task_input" required/>
+                <span class ="placeholder">Description</span>
+            </div>
+
+            <div class="due_period">
+                <div id="due_date">
+                    <input class="input_field" type="text" id="task_date"  required/>
+                    <span class ="placeholder">Due Date</span>
+                </div>
+                <div id="due_time">
+                    <input class="input_field" type="text" id="task_time" required/>
+                    <span class ="placeholder">Due Time</span>    
+                </div>
+            </div>
+
+            <h3 style="color: rgba(255, 255, 255, 0.747);">Choose Activity</h3>
+            <div class="task_hr2 shadow_effect"></div>
+            
+            <div class="collection_section">
+                <div class="action_icon" style="background-image: url(images/jogging.png)"></div>
+                <div class="action_icon" style="background-image: url(images/paint-palette.png)"></div>
+                <div class="action_icon" style="background-image: url(images/party-popper.png)"></div>
+                <div class="action_icon" style="background-image: url(images/controller.png)"></div>
+                <div class="action_icon" style="background-image: url(images/online-shopping.png)"></div>
+                <div class="action_icon" style="background-image: url(images/love.png)"></div>
+                <div class="action_icon" style="background-image: url(images/breakfast.png)"></div>
+                <div class="action_icon" style="background-image: url(images/lunch-time.png)"></div>
+                <div class="action_icon" style="background-image: url(images/dinner.png)"></div>
+                <div class="action_icon" style="background-image: url(images/letter.png)"></div>
+                <div class="action_icon" style="background-image: url(images/read.png)"></div>
+                <div class="action_icon" style="background-image: url(images/sleep.png)"></div>
+                <div class="action_icon" style="background-image: url(images/weightlifter.png)"></div>
+                <div class="action_icon" style="background-image: url(images/hard-work.png)"></div>
+                <div class="action_icon" style="background-image: url(images/popcorn.png)"></div>
+                <div class="action_icon" style="background-image: url(images/bathing.png)"></div>
+                <div class="action_icon" style="background-image: url(images/destination.png)"></div>
+                <div class="action_icon" style="background-image: url(images/bank.png)"></div>
+                
+            </div>
+
+            <span id="clear" class="fa fa-times" aria-hidden="true"></span>
+            
+            <div class="button" id="task_add">Add</div>
+        </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile_section" id="popup_profile">
+        <div class="profile_container">
+            <div id="proflie_pics">
+                <div class="profile_pic">
+                    <div class="avater" id="male" onclick="change_avater(0);"></div>
+                    <h4>Male</h4>
+                </div>
+                <div  class="profile_pic">
+                    <div class="avater" id="female" onclick=" change_avater(1);"></div>
+                    <h4>Female</h4>
+                </div>
+            </div>
+
+            <div class="profile_input">
+                <input class="input_field" id="name" type="text"  required/>
+                <span class ="placeholder">Name</span>
+            </div>
+            <div class="profile_input">
+                <input class="input_field" id="prof" type="text"  required/>
+                <span class ="placeholder">Profession</span>
+            </div>
+            <div class="button" id="btn">Save</div>
+        </div>
+    </div>
+
+
+
+
+    <!--javaScript section-->
+    <script src="js/main.js"></script>
+    <script src="js/allUrls.js"></script>
+    <script>
+        let toggler = document.getElementById('add_btn');
+        let model = document.getElementById('model_section');
+        let clearer  = document.getElementById('clear');
+        let blur1  = document.getElementById('blur1');
+        let blur2 = document.getElementById('blur2');
+        let navbar = document.getElementById('navIcon')
+        let sidebar = document.getElementById('sidebar');
+        let profile = document.getElementById('avator_profile');
+        let popup_profile = document.getElementById('popup_profile');
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click',() =>{
+            change_profile();
+            popup_profile.classList.toggle('active_profile');
+            blur1.classList.toggle('active');
+            blur2.classList.toggle('active'); 
+        });
+        profile.addEventListener("click", () =>{
+            popup_profile.classList.toggle('active_profile');
+            blur1.classList.toggle('active');
+            blur2.classList.toggle('active');       
+        });
+
+        navbar.addEventListener("click", () =>{
+            sidebar.classList.toggle('show');
+            
+        });
+
+        toggler.addEventListener("click", () =>{
+            model.classList.toggle("popup");
+            blur1.classList.toggle('active');
+            blur2.classList.toggle('active');
+        });
+        clearer.addEventListener("click", () =>{
+            model.classList.toggle("popup");
+            blur1.classList.toggle('active');
+            blur2.classList.toggle('active');
+        });
+
+    </script>
+   
+</body>
+</html>
